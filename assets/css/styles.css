@@ -256,49 +256,36 @@ p {
   z-index: 0;
 }
 
-/* ---------- PLACEHOLDER IMAGE SLOT ---------- */
-/* Replace this background with your hero image.
-   See IMAGE_SPECS.md for exact requirements.       */
+/* ---------- HERO IMAGE ---------- */
 .hero__bg-image {
   position: absolute;
   inset: 0;
   background-color: var(--parchment-dark);
-  background-image:
-    linear-gradient(
-      180deg,
-      rgba(245, 240, 232, 0.15) 0%,
-      rgba(245, 240, 232, 0.0) 30%,
-      rgba(245, 240, 232, 0.0) 60%,
-      rgba(245, 240, 232, 0.85) 100%
-    );
-  /* When image is added:
-     background-image: url('../images/hero-castle.jpg');
-     background-size: cover;
-     background-position: center 40%;
-  */
+  background-image: url('../images/hero-castle.jpg');
+  background-size: cover;
+  background-position: center 40%;
 }
 
-/* Atmospheric placeholder pattern */
+/* Warm tint overlay — bridges cold hero image into earth tone palette */
 .hero__bg-image::before {
   content: '';
   position: absolute;
   inset: 0;
   background:
-    radial-gradient(ellipse 80% 50% at 50% 55%, var(--sandstone-light), transparent),
-    radial-gradient(ellipse 40% 30% at 50% 60%, var(--sage), transparent 70%),
-    linear-gradient(180deg, var(--parchment) 0%, var(--parchment-dark) 40%, var(--sandstone) 80%, var(--sage-dark) 100%);
-  opacity: 0.6;
+    linear-gradient(180deg, rgba(166, 124, 82, 0.15) 0%, rgba(166, 124, 82, 0.08) 50%, rgba(166, 124, 82, 0.2) 100%);
 }
 
-/* Overlay for text legibility */
+/* Overlay for text legibility + warm fade to parchment */
 .hero__bg-overlay {
   position: absolute;
   inset: 0;
   background: linear-gradient(
     180deg,
-    rgba(245, 240, 232, 0.7) 0%,
-    rgba(245, 240, 232, 0.4) 40%,
-    rgba(245, 240, 232, 0.8) 100%
+    rgba(245, 240, 232, 0.55) 0%,
+    rgba(245, 240, 232, 0.15) 35%,
+    rgba(245, 240, 232, 0.05) 55%,
+    rgba(245, 240, 232, 0.7) 85%,
+    rgba(245, 240, 232, 1.0) 100%
   );
   z-index: 1;
 }

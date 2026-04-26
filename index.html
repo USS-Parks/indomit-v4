@@ -37,6 +37,7 @@
       <ul class="nav__links" id="navLinks">
         <li><a href="#problem">The Problem</a></li>
         <li><a href="#features">Capabilities</a></li>
+        <li><a href="#hardware">Hardware</a></li>
         <li><a href="#how-it-works">How It Works</a></li>
         <li><a href="#contact" class="btn btn--primary" style="padding: 0.5rem 1.2rem; font-size: 0.85rem;">Get Early Access</a></li>
       </ul>
@@ -128,7 +129,7 @@
             </li>
             <li>
               <span class="chevron">&rsaquo;</span>
-              <span><strong>Air-gapped option</strong> — complete network isolation for sensitive operations</span>
+              <span><strong>Two-tier network isolation</strong> — standard Network-Isolated Mode on every unit, with TEMPEST-rated air-gap configurations available for classified operations</span>
             </li>
             <li>
               <span class="chevron">&rsaquo;</span>
@@ -152,7 +153,7 @@
     <div class="container">
       <div class="metrics fade-up">
         <div>
-          <div class="metric__value">87%</div>
+          <div class="metric__value">Up to 87%</div>
           <div class="metric__label">Reduction in AI operating costs<br>vs. cloud API equivalents</div>
         </div>
         <div>
@@ -164,7 +165,7 @@
           <div class="metric__label">Data sovereignty<br>retained on-site</div>
         </div>
         <div>
-          <div class="metric__value">&lt;2hr</div>
+          <div class="metric__value">&lt;5hr</div>
           <div class="metric__label">Average deployment<br>from unbox to operational</div>
         </div>
       </div>
@@ -202,9 +203,11 @@
           <div class="feature-card__icon">&rsaquo;</div>
           <h3>Closed-Loop Security</h3>
           <p>
-            No outbound data transmission. Full air-gap capability for classified
-            or regulated environments. Your prompts and your outputs never leave
-            the physical walls of your facility.
+            No outbound data transmission. Network-Isolated Mode comes standard
+            on every unit, preventing accidental or unauthorized outbound traffic.
+            For classified and regulated environments, TEMPEST-rated air-gap
+            configurations are available as a custom engagement. Your prompts and
+            your outputs never leave the physical walls of your facility.
           </p>
         </div>
 
@@ -232,7 +235,7 @@
           <div class="feature-card__icon">&rsaquo;</div>
           <h3>Predictable Cost Structure</h3>
           <p>
-            One-time hardware investment plus optional support subscription.
+            One-time hardware investment and first-year support subscription.
             No per-token charges. No usage tiers. No pricing changes that
             force you to rearchitect your operations at a vendor's whim.
           </p>
@@ -253,9 +256,137 @@
 
 
   <!-- ============================================================
+       HARDWARE / PRODUCTS
+       ============================================================ -->
+  <section class="section" id="hardware">
+    <div class="container">
+      <div class="features__header fade-up">
+        <p class="text-mono">Hardware</p>
+        <h2>Two Tiers. One Standard of Sovereignty.</h2>
+        <p>
+          Every Allodial unit ships with Allodial OS, the Centralized Ontology
+          Engine, Multi-Model Orchestrator, and Integration Layer bundled in.
+          No separate software license. The software is the product; the
+          hardware is the delivery mechanism.
+        </p>
+      </div>
+
+      <div class="products fade-up">
+
+        <!-- SENTINEL -->
+        <div class="product-card">
+          <div class="product-card__header">
+            <span class="product-card__badge">Entry-Tier</span>
+            <h3 class="product-card__name">Sentinel</h3>
+            <p class="product-card__form-factor">Tower Workstation&ensp;|&ensp;50 &ndash; 200 employees</p>
+          </div>
+
+          <ul class="product-card__specs">
+            <li>
+              <span class="spec-label">GPU</span>
+              <span class="spec-value">1x NVIDIA RTX 6000 Ada</span>
+            </li>
+            <li>
+              <span class="spec-label">VRAM</span>
+              <span class="spec-value">48 GB GDDR6 ECC</span>
+            </li>
+            <li>
+              <span class="spec-label">Max Model (Q4)</span>
+              <span class="spec-value">24 &ndash; 30B parameters</span>
+            </li>
+            <li>
+              <span class="spec-label">Throughput</span>
+              <span class="spec-value">~15 &ndash; 25 tok/s (24B)</span>
+            </li>
+            <li>
+              <span class="spec-label">Storage</span>
+              <span class="spec-value">8.6 TB raw &ensp;|&ensp;~3.84 TB usable (ZFS mirror)</span>
+            </li>
+            <li>
+              <span class="spec-label">Fine-Tuning</span>
+              <span class="spec-value">LoRA / QLoRA &mdash; 7B models</span>
+            </li>
+            <li>
+              <span class="spec-label">Network Isolation</span>
+              <span class="spec-value">BIOS-disabled NICs + physical cable disconnect</span>
+            </li>
+            <li>
+              <span class="spec-label">Noise</span>
+              <span class="spec-value">~35 dBA (office-safe)</span>
+            </li>
+          </ul>
+
+          <div class="product-card__pricing">
+            <div class="product-card__price">$24,900</div>
+            <div class="product-card__sma">+ $2,400/yr remote SMA</div>
+          </div>
+        </div>
+
+        <!-- BASTION -->
+        <div class="product-card product-card--featured">
+          <div class="product-card__header">
+            <span class="product-card__badge product-card__badge--gold">Mid-Market</span>
+            <h3 class="product-card__name">Bastion</h3>
+            <p class="product-card__form-factor">2U Rackmount&ensp;|&ensp;200 &ndash; 2,000 employees</p>
+          </div>
+
+          <ul class="product-card__specs">
+            <li>
+              <span class="spec-label">GPU</span>
+              <span class="spec-value">2x NVIDIA L40S</span>
+            </li>
+            <li>
+              <span class="spec-label">VRAM</span>
+              <span class="spec-value">96 GB GDDR6 (48 GB per GPU)</span>
+            </li>
+            <li>
+              <span class="spec-label">Max Model (Q4)</span>
+              <span class="spec-value">Up to 70B parameters (tensor parallel)</span>
+            </li>
+            <li>
+              <span class="spec-label">Throughput</span>
+              <span class="spec-value">~20 &ndash; 30 tok/s (48B) &ensp;|&ensp;~2 &ndash; 5 tok/s (70B batch)</span>
+            </li>
+            <li>
+              <span class="spec-label">Storage</span>
+              <span class="spec-value">16.3 TB raw &ensp;|&ensp;~11.52 TB usable (RAIDZ1)</span>
+            </li>
+            <li>
+              <span class="spec-label">Fine-Tuning</span>
+              <span class="spec-value">LoRA / QLoRA &mdash; up to 13B native</span>
+            </li>
+            <li>
+              <span class="spec-label">Network Isolation</span>
+              <span class="spec-value">Keyed hardware kill switch (LED) + physical disconnect</span>
+            </li>
+            <li>
+              <span class="spec-label">Environment</span>
+              <span class="spec-value">Server room recommended (~55 dBA)</span>
+            </li>
+          </ul>
+
+          <div class="product-card__pricing">
+            <div class="product-card__price">$49,900</div>
+            <div class="product-card__sma">+ $5,500/yr remote SMA</div>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- SPEC SHEET CTA -->
+      <div class="spec-cta fade-up">
+        <p>Full component-level BOM, margin scenarios, power/thermal profiles, and supported configuration details available on request.</p>
+        <a href="#contact" class="btn btn--outline">Request Full Spec Sheet</a>
+      </div>
+
+    </div>
+  </section>
+
+
+  <!-- ============================================================
        HOW IT WORKS
        ============================================================ -->
-  <section class="section" id="how-it-works">
+  <section class="section section--alt" id="how-it-works">
     <div class="container">
       <div class="features__header fade-up">
         <p class="text-mono">Deployment</p>
@@ -340,6 +471,7 @@
           <h4>Product</h4>
           <ul>
             <li><a href="#features">Capabilities</a></li>
+            <li><a href="#hardware">Hardware</a></li>
             <li><a href="#how-it-works">Deployment</a></li>
             <li><a href="#contact">Early Access</a></li>
           </ul>

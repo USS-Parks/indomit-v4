@@ -557,6 +557,161 @@ p {
 
 
 /* ============================================================
+   PRODUCTS / HARDWARE SECTION
+   ============================================================ */
+
+.products {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: var(--space-md);
+  align-items: start;
+  margin-bottom: var(--space-lg);
+}
+
+.product-card {
+  background-color: var(--basalt);
+  border: 1px solid var(--slate);
+  border-radius: var(--border-radius);
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
+}
+
+.product-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.3);
+  border-color: var(--gold-dim);
+}
+
+.product-card--featured {
+  border-color: var(--gold-dim);
+}
+
+.product-card--featured:hover {
+  border-color: var(--gold);
+  box-shadow: 0 8px 40px rgba(201, 168, 76, 0.12);
+}
+
+.product-card__header {
+  padding: var(--space-md) var(--space-md) var(--space-sm);
+}
+
+.product-card__badge {
+  display: inline-block;
+  font-family: var(--font-mono);
+  font-size: 0.72rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--mist);
+  background-color: var(--granite);
+  border: 1px solid var(--slate);
+  padding: 0.2rem 0.7rem;
+  border-radius: 3px;
+  margin-bottom: 0.6rem;
+}
+
+.product-card__badge--gold {
+  color: var(--gold);
+  border-color: var(--gold-dim);
+  background-color: rgba(201, 168, 76, 0.08);
+}
+
+.product-card__name {
+  font-size: clamp(1.6rem, 3vw, 2.2rem);
+  color: var(--frost);
+  margin-bottom: 0.3rem;
+}
+
+.product-card--featured .product-card__name {
+  color: var(--gold);
+}
+
+.product-card__form-factor {
+  font-size: 0.88rem;
+  color: var(--storm);
+  margin-bottom: 0;
+}
+
+.product-card__specs {
+  list-style: none;
+  padding: 0 var(--space-md);
+  margin: 0;
+}
+
+.product-card__specs li {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  padding: 0.55rem 0;
+  border-bottom: 1px solid rgba(53, 60, 71, 0.4);
+  font-size: 0.88rem;
+  gap: var(--space-sm);
+}
+
+.product-card__specs li:last-child {
+  border-bottom: none;
+}
+
+.spec-label {
+  font-family: var(--font-mono);
+  font-size: 0.74rem;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: var(--storm);
+  flex-shrink: 0;
+  min-width: 110px;
+}
+
+.spec-value {
+  color: var(--cloud);
+  text-align: right;
+}
+
+.product-card--featured .spec-value {
+  color: var(--frost);
+}
+
+.product-card__pricing {
+  padding: var(--space-md);
+  margin-top: var(--space-xs);
+  background-color: rgba(15, 17, 20, 0.4);
+  border-top: 1px solid rgba(53, 60, 71, 0.4);
+  text-align: center;
+}
+
+.product-card__price {
+  font-family: var(--font-heading);
+  font-size: clamp(1.8rem, 3vw, 2.4rem);
+  font-weight: 600;
+  color: var(--frost);
+  line-height: 1;
+  margin-bottom: 0.3rem;
+}
+
+.product-card--featured .product-card__price {
+  color: var(--gold);
+}
+
+.product-card__sma {
+  font-size: 0.82rem;
+  color: var(--storm);
+  letter-spacing: 0.02em;
+}
+
+/* Spec Sheet CTA */
+.spec-cta {
+  text-align: center;
+  padding-top: var(--space-sm);
+}
+
+.spec-cta p {
+  font-size: 0.92rem;
+  color: var(--mist);
+  margin: 0 auto var(--space-sm);
+  max-width: 600px;
+}
+
+
+/* ============================================================
    HOW IT WORKS
    ============================================================ */
 
@@ -773,6 +928,14 @@ p {
   .step:not(:last-child)::after {
     display: none;
   }
+
+  .products {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .spec-label {
+    min-width: 90px;
+  }
 }
 
 
@@ -812,6 +975,19 @@ p {
 
   .metrics {
     grid-template-columns: 1fr;
+  }
+
+  .products {
+    grid-template-columns: 1fr;
+  }
+
+  .product-card__specs li {
+    flex-direction: column;
+    gap: 0.15rem;
+  }
+
+  .spec-value {
+    text-align: left;
   }
 
   .footer__inner {

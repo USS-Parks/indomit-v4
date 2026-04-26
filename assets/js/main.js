@@ -1,5 +1,5 @@
 /* ============================================================
-   ALLODIAL — Minimal Page Interactions
+   INDOMIT — Minimal Page Interactions
    ============================================================ */
 
 (function () {
@@ -101,7 +101,7 @@
       }, 3000);
 
       // TODO: Wire to actual backend / email service
-      console.log('[Allodial] Waitlist signup:', email);
+      console.log('[Indomit] Waitlist signup:', email);
     });
   }
 

@@ -1,8 +1,8 @@
-# Allodial
+# Indomit
 
 **Sovereign AI infrastructure for businesses that refuse to rent their intelligence.**
 
-Allodial builds closed-loop, on-site AI servers and orchestrators. One box. Your data. Your models. No cloud dependency, no runaway token costs, no third-party exposure.
+Indomit builds closed-loop, on-site AI servers and orchestrators. One box. Your data. Your models. No cloud dependency, no runaway token costs, no third-party exposure.
 
 ## Quick Start
 
@@ -10,8 +10,8 @@ This is a static site. No build step required.
 
 ```bash
 # Clone
-git clone https://github.com/YOUR_USERNAME/allodial-site.git
-cd allodial-site
+git clone https://github.com/YOUR_USERNAME/indomit.git
+cd indomit
 
 # Serve locally (pick one)
 python3 -m http.server 8000
@@ -28,7 +28,7 @@ This repo is GitHub Pages-ready. Enable Pages in your repo settings, point it at
 ## Structure
 
 ```
-allodial-site/
+indomit/
   index.html              # Landing page
   assets/
     css/styles.css         # All styles, CSS custom properties for theming

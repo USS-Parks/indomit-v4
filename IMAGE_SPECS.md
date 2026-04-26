@@ -1,4 +1,4 @@
-# Image Specifications — Allodial Website
+# Image Specifications — Indomit Website
 
 All placeholder slots are defined in `assets/css/styles.css` and referenced in `index.html`. Replace the CSS placeholder backgrounds with actual images when ready.
 
@@ -46,7 +46,7 @@ Keep the `::before` pseudo-element overlay for the gradient fade that ensures te
 **File size target:** Under 200KB
 
 ### Content
-Cropped or adapted version of the hero image with the Allodial logo/wordmark overlaid in the lower-left. Text should read clearly at thumbnail size in social media feeds.
+Cropped or adapted version of the hero image with the Indomit logo/wordmark overlaid in the lower-left. Text should read clearly at thumbnail size in social media feeds.
 
 ### Integration
 Uncomment the OG meta tag in `index.html`:

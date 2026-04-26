@@ -1108,6 +1108,48 @@ p {
   color: var(--frost);
 }
 
+.footer__mission-vision {
+  margin-bottom: var(--space-md);
+}
+
+.mission-vision-card {
+  display: flex;
+  gap: 0;
+  background-color: var(--granite);
+  border: 1px solid var(--slate);
+  border-radius: var(--border-radius);
+  overflow: hidden;
+}
+
+.mission-vision-card__section {
+  flex: 1;
+  padding: var(--space-md);
+}
+
+.mission-vision-card__section h4 {
+  font-family: var(--font-mono);
+  font-size: 0.72rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--gold);
+  margin-bottom: var(--space-xs);
+  font-weight: 600;
+}
+
+.mission-vision-card__section p {
+  font-size: 0.88rem;
+  color: var(--mist);
+  line-height: 1.7;
+  margin-bottom: 0;
+  max-width: none;
+}
+
+.mission-vision-card__divider {
+  width: 1px;
+  background-color: var(--slate);
+  align-self: stretch;
+}
+
 .footer__bottom {
   border-top: 1px solid rgba(53, 60, 71, 0.3);
   padding-top: var(--space-sm);
@@ -1232,6 +1274,15 @@ p {
 
   .spec-value {
     text-align: left;
+  }
+
+  .mission-vision-card {
+    flex-direction: column;
+  }
+
+  .mission-vision-card__divider {
+    width: auto;
+    height: 1px;
   }
 
   .footer__inner {
